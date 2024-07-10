@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>H5 Page with Full Image</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5 Page with Sliced Images</title>
     <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        overflow: auto;
-        background-color: #f0f0f0;
-      }
-      img {
-        width: 100%;
-        height: auto;
-      }
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column; /* 垂直排列图片 */
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: auto; /* 确保页面可以滚动 */
+            background-color: #f0f0f0;
+        }
+        img {
+            width: 100%; /* 确保每张图片宽度适应视口宽度 */
+            height: auto; /* 高度自适应，保持图片比例 */
+            display: block; /* 确保图片块级显示，移除默认的 inline 样式可能带来的间隙 */
+        }
     </style>
-  </head>
-  <body>
-    <img src="your-image-2x.jpg" alt="Design Image" />
-  </body>
+</head>
+<body>
+    <!-- 切片图片 -->
+    <img src="1_01.jpg" alt="Image Part 1">
+    <img src="1_02.jpg" alt="Image Part 2">
+    <img src="1_03.jpg" alt="Image Part 3">
+    <img src="1_04.jpg" alt="Image Part 4">
+    <img src="1_05.jpg" alt="Image Part 5">
+    <img src="1_06.jpg" alt="Image Part 6">
+    <img src="1_07.jpg" alt="Image Part 7">
+    <img src="1_08.jpg" alt="Image Part 8">
+    <img src="1_09.jpg" alt="Image Part 9">
+    <img src="1_10.jpg" alt="Image Part 10">
+    <img src="1_11.jpg" alt="Image Part 11">
+    <img src="1_12.jpg" alt="Image Part 12">
+    <img src="1_13.jpg" alt="Image Part 13">
+        <!-- 添加更多图片切片 -->
+</body>
 </html>
